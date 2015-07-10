@@ -1,6 +1,7 @@
 Electronic Circuit Simulation
 =============================
 
+The following book is adapted from a chapter from my final year MEng project report at the University of York.
 
 License
 =======
