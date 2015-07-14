@@ -152,7 +152,7 @@ row\ n+1
 \\
 &
 \begin{matrix}
-col\ i & col\ j & col\ n+1
+col\ i & col\ j & col\ n\!+\!1
 \end{matrix}
 
 \end{align*}
