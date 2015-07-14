@@ -125,20 +125,20 @@ The `stamp` for a voltage source between nodes i and j for an n+1 node circuit i
 
 $$
 \begin{bmatrix}
-y_{11} & y_{12} & 1 \\
-y_{21} & y_{22} & -1 \\
+_ & _ & 1 \\
+_ & _ & -1 \\
 1 &-1 & 0
 \end{bmatrix}
 
 \begin{bmatrix}
-v_{1} \\
-v_{2} \\
+_ \\
+_ \\
 i_{12}
 \end{bmatrix}
 =
 \begin{bmatrix}
-I_{1} \\
-I_{2} \\
+_ \\
+_ \\
 V_{12}
 \end{bmatrix}
 $$
