@@ -157,4 +157,18 @@ col\ i & col\ j & col\ n\!+\!1
 \end{align*}
 $$
 
+A consequence of MNA is the appearance one or more zeros on the diagonal of the $$Y$$ matrix, as seen above. This can cause problems when using simultaneous equation solvers.
+
+It is possible to swap rows to move the zeros away from the diagonal, but a better method exists which involves eliminating the unknown current values and rearranging the equations to closer resemble conventional nodal analysis. This method results in equations that are often:
+
+- Better conditioned numerically
+- More compact
+- More efficient to solve than the original MNA equations.
+
+For larger matrices, this is likely to have significant benefits.
+
+A simple example of this procedure is shown in the following equations for a generic three-node circuit, with a voltage source $$V_{12}$$ between nodes 1 and 2.
+
+
+
 ## Nonlinear DC Analysis
