@@ -121,26 +121,41 @@ V_{12}
 \end{bmatrix}
 $$
 
-The `stamp` for a voltage source between nodes i and j for an n+1 node circuit is:
+The 'stamp' for a voltage source between nodes $$i$$ and $$j$$ for an $$n+1$$ node circuit is:
 
 $$
-\begin{bmatrix}
-_ & _ & 1 \\
-_ & _ & -1 \\
-1 &-1 & 0
-\end{bmatrix}
+\begin{align*}
 
+&
 \begin{bmatrix}
-_ \\
-_ \\
+ &  & 1 \\
+ &  & -1 \\
+1\quad & -1\quad & 0
+\end{bmatrix}
+&
+\begin{bmatrix}
+ \\
+ \\
 i_{12}
 \end{bmatrix}
 =
 \begin{bmatrix}
-_ \\
-_ \\
+ \\
+ \\
 V_{12}
 \end{bmatrix}
+\begin{matrix}
+row\ i\\ 
+row\ j\\ 
+row\ n+1
+\end{matrix}
+\\
+&
+\begin{matrix}
+col\ i & col\ j & col\ n+1
+\end{matrix}
+
+\end{align*}
 $$
 
 ## Nonlinear DC Analysis
