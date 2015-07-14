@@ -3,6 +3,8 @@ Electronic Circuit Simulation
 
 The following book is adapted from a chapter from my final year MEng project report at the University of York.
 
+Knowledge of basic circuit theory, e.g. [Kirchhoff's](https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws) [laws](http://www.electronics-tutorials.ws/dccircuits/dcp_4.html), is assumed. For an introduction to circuit theory, consider Khan Academy's [video tutorials](https://www.khanacademy.org/science/physics/circuits-topic).
+
 License
 =======
 
