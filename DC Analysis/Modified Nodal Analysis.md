@@ -56,7 +56,7 @@ V_{12}
 \begin{matrix}
 row\ i\\
 row\ j\\
-row\ n+1
+row\ $$n\!+\!1$$
 \end{matrix}
 \\
 &
