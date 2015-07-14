@@ -86,13 +86,12 @@ I_1\\
 \end{bmatrix}
 $$
 
-There are several numerical methods for solving the above equation for $$v$$. The most obvious is inverting the $$Y$$ matrix and moving to the RHS, as shown below. However, much more efficient methods exist, such as Gaussian Elimination or LU Factorisation.
+There are several numerical methods for solving the above equation for $$v$$. The most obvious is inverting the $$Y$$ matrix and moving to the RHS, as in $$v=Y^{-1}J$$. However, much more efficient methods exist, such as Gaussian Elimination or LU Factorisation.
 
-$$
-v=Y^{-1}J
-$$
+
 
 ### Modified Nodal Analysis
 
+For independent voltage sources, simple nodal analysis isn’t enough. To solve circuits with these elements, Modified Nodal Analysis (MNA) is required. Since current-controlled sources use a zero-valued voltage source as the control element, all controlled sources (except VCCSs) consist of at least one independent voltage source, and MNA is needed to model these components.
 
 ## Nonlinear DC Analysis
