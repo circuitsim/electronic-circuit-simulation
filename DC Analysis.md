@@ -47,4 +47,26 @@ The diagram below shows a three-node example circuit consisting of a current sou
 
 ![Simple 3-node circuit](./simple-3-node-circuit.jpg)
 
+Analysing the circuit gives the following equation. This is an indefinite formulation: each row and column sums to zero, so there is not an independent set of equations. See [this?](https://en.wikipedia.org/wiki/Overdetermined_system).
+
+$$
+\begin{bmatrix}
+\frac{1}{R_2} & 0 & \frac{-1}{R_2} \\ 
+0 & \frac{1}{R_1} & \frac{-1}{R_1} \\ 
+\frac{-1}{R_2} & \frac{-1}{R_1} & \frac{1}{R_1}+\frac{1}{R_2}
+\end{bmatrix}
+\begin{bmatrix}
+V_0\\ 
+V_1\\ 
+V_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+-I_1\\ 
+I_1\\ 
+0
+\end{bmatrix}
+$$
+
+
 ## Nonlinear DC Analysis
