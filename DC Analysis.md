@@ -43,8 +43,8 @@ col\ i \quad col j
 $$
 
 Each of these stamps is added together in place to form the complete equation. 
-The diagram below shows a three-node example circuit consisting of a current source and two resistors. The circled numbers label the three nodes, and V0 is earthed at zero volts.
+The diagram below shows a three-node example circuit consisting of a current source and two resistors. The circled numbers label the three nodes, and $$V0$$ is earthed at zero volts.
 
-<img src="./simple-3-node-circuit.jpg" style="center">
+![Simple 3-node circuit](./simple-3-node-circuit.jpg)
 
 ## Nonlinear DC Analysis
