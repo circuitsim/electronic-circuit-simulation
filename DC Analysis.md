@@ -68,5 +68,23 @@ I_1\\
 \end{bmatrix}
 $$
 
+The circuit needs a reference node where the voltage is known. If none exist, an arbitrary node can be used as a reference. As this reduces the number of independent variables by one, an equation can be omitted. Since $$V_0 = 0$$, this can be used as the reference node. Setting $$V_0 = 0$$ and removing the nodal equation for node zero simplifies the equation to:
+
+$$
+\begin{bmatrix}
+\frac{1}{R_1} & \frac{-1}{R_1} \\ 
+\frac{-1}{R_1} & \frac{1}{R_1}+\frac{1}{R_2}
+\end{bmatrix}
+\begin{bmatrix}
+V_1\\ 
+V_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+I_1\\ 
+0
+\end{bmatrix}
+$$
+
 
 ## Nonlinear DC Analysis
