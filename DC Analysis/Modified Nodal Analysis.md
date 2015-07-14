@@ -1,6 +1,8 @@
 # Modified Nodal Analysis
 
-For independent voltage sources, simple nodal analysis isn’t enough. To solve circuits with these elements, Modified Nodal Analysis (MNA) is required. Since current-controlled sources use a zero-valued voltage source as the control element, all controlled sources (except Voltage-Controlled Current Sources) consist of at least one independent voltage source, and MNA is needed to model these components.
+For independent voltage sources, simple nodal analysis isn’t enough. To solve circuits with these elements, Modified Nodal Analysis (MNA) is required. All controlled sources (except Voltage-Controlled Current Sources) consist of at least one independent voltage source, and MNA is needed to model these components too.
+
+## Example
 
 ![Circuit requiring MNA](../imgs/MNA.jpg)
 
@@ -31,7 +33,9 @@ V_{12}
 \end{bmatrix}
 $$
 
-The 'stamp' for a voltage source between nodes $$i$$ and $$j$$ for an $$n\!+\!1$$ node circuit is:
+## Voltage Source Stamp
+
+The *stamp* for a voltage source between nodes $$i$$ and $$j$$ for an $$n\!+\!1$$ node circuit is:
 
 $$
 \begin{align*}
@@ -66,6 +70,8 @@ col\ i & col\ j & col\ n\!+\!1
 
 \end{align*}
 $$
+
+## Equation Conditioning
 
 A consequence of MNA is the appearance one or more zeros on the diagonal of the $$Y$$ matrix, as seen above. This can cause problems when using simultaneous equation solvers.
 
