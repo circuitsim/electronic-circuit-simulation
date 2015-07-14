@@ -100,4 +100,25 @@ $$
 v_2-v_1=V_s
 $$
 
+The resulting circuit equation is shown below, along with the Y matrix stamp for a voltage source between nodes i and j for an n+1 node circuit.
+
+$$
+\begin{bmatrix}
+\frac{1}{R1} + \tfrac{1}{R2} & \tfrac{-1}{R2} & 1 \\
+\tfrac{-1}{R2} & \tfrac{1}{R2} & -1\\
+1 & -1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+v_{1}\\
+v_{2}\\
+i_{12}
+\end{bmatrix}
+=
+\begin{bmatrix}
+I_{1}=0\\
+I_{2}=0\\
+V_{12}
+\end{bmatrix}
+$$
+
 ## Nonlinear DC Analysis
