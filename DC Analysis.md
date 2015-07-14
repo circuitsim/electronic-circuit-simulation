@@ -121,4 +121,24 @@ V_{12}
 \end{bmatrix}
 $$
 
+$$
+\begin{pmatrix}
+y_{11} & y_{12} & 1 \\
+y_{21} & y_{22} & -1 \\
+1 &-1 & 0
+\end{pmatrix}
+
+\begin{pmatrix}
+v_{1} \\
+v_{2} \\
+i_{12}
+\end{pmatrix}
+=
+\begin{pmatrix}
+I_{1} \\
+I_{2} \\
+V_{12}
+\end{pmatrix}
+$$
+
 ## Nonlinear DC Analysis
