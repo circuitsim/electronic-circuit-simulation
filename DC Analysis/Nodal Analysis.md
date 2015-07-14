@@ -20,7 +20,7 @@ Where:
 
 ## Creating the Equation
 
-Rather than constructing a list of equations node-by-node, it is often easier to build up the matrix element-by-element, using ‘matrix stamps’. Using this technique, every element contributes a set pattern to Equation . Equation  shows the contribution to the $$Y$$ matrix of a resistor with conductance $$g_k$$ from node $$i$$ to node $$j$$:
+Rather than constructing a list of equations node-by-node, it is often easier to build up the matrix element-by-element, using ‘matrix stamps’. Using this technique, every element contributes a set pattern to the circuit equation. The contribution to the $$Y$$ matrix for a resistor with conductance $$g_k$$ from node $$i$$ to node $$j$$ is:
 
 $$
 \begin{array}{cc}
@@ -39,6 +39,9 @@ col\ i \quad col j
 $$
 
 Each of these stamps is added together in place to form the complete equation.
+
+### Example
+
 The diagram below shows a three-node example circuit consisting of a current source and two resistors. The circled numbers label the three nodes, and $$V_0$$ is earthed at zero volts.
 
 ![Simple Circuit](../imgs/simple-3-node-circuit.jpg)
