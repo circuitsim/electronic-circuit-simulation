@@ -89,8 +89,8 @@ The matrix equation is:
 
 $$
 \begin{bmatrix}
-\frac{1}{R1} + \tfrac{1}{R2} & \tfrac{-1}{R2} & 1 \\
-\tfrac{-1}{R2} & \tfrac{1}{R2} & -1\\
+\frac{1}{R_1} + \tfrac{1}{R_2} & \tfrac{-1}{R_2} & 1 \\
+\tfrac{-1}{R_2} & \tfrac{1}{R_2} & -1\\
 1 & -1 & 0
 \end{bmatrix}
 \begin{bmatrix}
