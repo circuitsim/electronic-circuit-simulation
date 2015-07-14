@@ -85,6 +85,8 @@ For larger matrices, this is likely to have significant benefits.
 
 A simple example of this procedure is shown in the following equations for a generic three-node circuit, with a voltage source $$V_{12}$$ between nodes 1 and 2.
 
+The matrix equation is:
+
 $$
 \begin{bmatrix}
 \frac{1}{R1} + \tfrac{1}{R2} & \tfrac{-1}{R2} & 1 \\
@@ -102,5 +104,15 @@ I_{1}=0\\
 I_{2}=0\\
 V_{12}
 \end{bmatrix}
+$$
+
+Which represents the set of simultaneous equations:
+
+$$
+\begin{align*}
+y_{11}v_1 + y_{12}v_2 + i_{12} &= I_1 \\ 
+y_{21}v_1 + y_{22}v_2 - i_{12} &= I_2 \\ 
+v_1 - v_2 &= V_{12} \\ 
+\end{align*}
 $$
 
