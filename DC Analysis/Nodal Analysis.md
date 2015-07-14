@@ -14,9 +14,9 @@ $$
 
 Where:
 
-- Y - n×n nodal admittance matrix
-- v - n×1 node voltage vector
-- J - n×1 current source vector
+- Y - $$n\!\times\!n$$ nodal admittance matrix
+- v - $$n\!\times\!1$$ node voltage vector
+- J - $$n\!\times\!1$$ current source vector
 
 ## Creating the Equation
 
