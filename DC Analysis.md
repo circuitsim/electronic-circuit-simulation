@@ -132,7 +132,6 @@ $$
  &  & -1 \\
 1\quad & -1\quad & 0
 \end{bmatrix}
-&
 \begin{bmatrix}
  \\
  \\
