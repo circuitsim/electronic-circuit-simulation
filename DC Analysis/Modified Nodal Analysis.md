@@ -75,7 +75,7 @@ $$
 
 A consequence of MNA is the appearance one or more zeros on the diagonal of the $$Y$$ matrix, as seen above. This can cause problems when using simultaneous equation solvers.
 
-It is possible to swap rows to move the zeros away from the diagonal, but a better method exists which involves eliminating the unknown current values and rearranging the equations to closer resemble conventional nodal analysis. This method results in equations that are often:
+It is possible to swap rows to move the zeros away from the diagonal, but a better method exists. This method involves eliminating the unknown current values and rearranging the equations to closer resemble conventional nodal analysis. This method results in equations that are often:
 
 - Better conditioned numerically
 - More compact
@@ -84,3 +84,23 @@ It is possible to swap rows to move the zeros away from the diagonal, but a bett
 For larger matrices, this is likely to have significant benefits.
 
 A simple example of this procedure is shown in the following equations for a generic three-node circuit, with a voltage source $$V_{12}$$ between nodes 1 and 2.
+
+$$
+\begin{bmatrix}
+\frac{1}{R1} + \tfrac{1}{R2} & \tfrac{-1}{R2} & 1 \\
+\tfrac{-1}{R2} & \tfrac{1}{R2} & -1\\
+1 & -1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+v_{1}\\
+v_{2}\\
+i_{12}
+\end{bmatrix}
+=
+\begin{bmatrix}
+I_{1}=0\\
+I_{2}=0\\
+V_{12}
+\end{bmatrix}
+$$
+
