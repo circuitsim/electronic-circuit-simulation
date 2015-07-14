@@ -121,7 +121,7 @@ V_{12}
 \end{bmatrix}
 $$
 
-The 'stamp' for a voltage source between nodes $$i$$ and $$j$$ for an $$n+1$$ node circuit is:
+The 'stamp' for a voltage source between nodes $$i$$ and $$j$$ for an $$n\!+\!1$$ node circuit is:
 
 $$
 \begin{align*}
