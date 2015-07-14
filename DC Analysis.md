@@ -22,4 +22,8 @@ Where:
 - v - n×1 node voltage vector
 - J - n×1 current source vector
 
+Rather than constructing a list of equations node-by-node, it is often easier to build up the matrix element-by-element, using ‘matrix stamps’. Using this technique, every element contributes a set pattern to Equation . Equation  shows the contribution to the $$Y$$ matrix of a resistor with conductance $$gk$$ from node $$i$$ to node $$j$$:
+
+
+
 ## Nonlinear DC Analysis
