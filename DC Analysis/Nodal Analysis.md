@@ -41,10 +41,7 @@ $$
 Each of these stamps is added together in place to form the complete equation.
 The diagram below shows a three-node example circuit consisting of a current source and two resistors. The circled numbers label the three nodes, and $$V_0$$ is earthed at zero volts.
 
-<img src="../imgs/simple-3-node-circuit.jpg"
-  style="display: block;
-    margin-left: auto;
-    margin-right: auto"/>
+![Simple Circuit](../imgs/simple-3-node-circuit.jpg)
 
 Analysing the circuit gives the following equation. This is an indefinite formulation: each row and column sums to zero, so there is not an independent set of equations. See [this?](https://en.wikipedia.org/wiki/Overdetermined_system).
 
