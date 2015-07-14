@@ -1,6 +1,6 @@
 # Modified Nodal Analysis
 
-For independent voltage sources, simple nodal analysis isn’t enough. To solve circuits with these elements, Modified Nodal Analysis (MNA) is required. Since current-controlled sources use a zero-valued voltage source as the control element, all controlled sources (except VCCSs) consist of at least one independent voltage source, and MNA is needed to model these components.
+For independent voltage sources, simple nodal analysis isn’t enough. To solve circuits with these elements, Modified Nodal Analysis (MNA) is required. Since current-controlled sources use a zero-valued voltage source as the control element, all controlled sources (except Voltage-Controlled Current Sources) consist of at least one independent voltage source, and MNA is needed to model these components.
 
 ![Circuit requiring MNA](../imgs/MNA.jpg)
 
