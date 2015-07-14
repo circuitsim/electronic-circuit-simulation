@@ -100,7 +100,7 @@ $$
 v_2-v_1=V_s
 $$
 
-The resulting circuit equation is shown below, along with the Y matrix stamp for a voltage source between nodes i and j for an n+1 node circuit.
+The resulting circuit equation is shown below.
 
 $$
 \begin{bmatrix}
@@ -120,6 +120,8 @@ I_{2}=0\\
 V_{12}
 \end{bmatrix}
 $$
+
+The `stamp` for a voltage source between nodes i and j for an n+1 node circuit is:
 
 $$
 \begin{bmatrix}
