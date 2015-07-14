@@ -27,18 +27,19 @@ Where:
 Rather than constructing a list of equations node-by-node, it is often easier to build up the matrix element-by-element, using ‘matrix stamps’. Using this technique, every element contributes a set pattern to Equation . Equation  shows the contribution to the $$Y$$ matrix of a resistor with conductance $$gk$$ from node $$i$$ to node $$j$$:
 
 $$
+\begin{matrix}
 \begin{pmatrix}
 gk & -gk \\
 -gk & gk
-\end{pmatrix}
-\begin{matrix}
+\end{pmatrix} & \begin{matrix}
 row i\\ 
 row j
-\end{matrix}
-\\
+\end{matrix}\\ 
 \begin{matrix}
 col i & col j 
+\end{matrix} & 
 \end{matrix}
+
 $$
 
 ## Nonlinear DC Analysis
