@@ -14,7 +14,9 @@ Using nodal analysis, solutions for the DC voltage at every node for linear, tim
 
 An equation is calculated for each node using Kirchhoff’s Current Law (KCL). For a circuit with n+1 nodes, there arise n+1 simultaneous equations, which can be expressed in matrix form. One node must always be used as a reference, reducing the number of unknown variables by one. Doing this also means that there is an excess equation, which can be omitted, resulting in n equations for n+1 nodes. The resulting circuit equation takes the following form:
 
-$$Yv=J$$
+$$
+Yv=J
+$$
 
 Where:
 
