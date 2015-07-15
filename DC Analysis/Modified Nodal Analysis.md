@@ -145,27 +145,20 @@ v_1 - v_2 &= V_{12}
 \end{align*}
 $$
 
-Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too.
+Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too. Start by adding row 2 to row 1:
 
 $$
 \begin{pmatrix}
-y_{11}+y_{21} & y_{12}+y_{22} \\
-1 &-1
-\end{pmatrix}
-\begin{pmatrix}
-v_{1} \\
-v_{2}
-\end{pmatrix}
-=
-\begin{pmatrix}
-I_{1}+I_{2} \\
+I_1+I_2 \\
 V_{12}
 \end{pmatrix}
 $$
 
 $$
 \begin{align*}
-(y_{11}+y_{21})v_1 + (y_{12}+y_{22})v_2 &= I_1+I_2 \\
+(y_{11}+y_{21}+y_{12}+y_{22})v_1 + (y_{12}+y_{22})(v_2-v_1) &= I_1+I_2 \\
 -(v_2 - v_1) &= V_{12}
 \end{align*}
 $$
+
+
