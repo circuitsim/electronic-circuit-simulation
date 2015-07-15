@@ -161,4 +161,43 @@ $$
 \end{align*}
 $$
 
+We then substitute $$V_{12}$$ into the first equation to get:
+
+$$
+\begin{align*}
+(y_{11}+y_{21}+y_{12}+y_{22})v_1 + (y_{12}+y_{22})(-V_{12}) &= I_1+I_2
+\end{align*}
+$$
+
+And rearrange:
+
+$$
+\begin{align*}
+(y_{11}+y_{21}+y_{12}+y_{22})v_1 &= I_1+I_2+V_{12}(y_{12}+y_{22})
+\end{align*}
+$$
+
+Finally, in matrix form:
+
+$$
+\begin{pmatrix}
+y_{11}+y_{21}+y_{12}+y_{22} & y_{12}+y_{22}
+\end{pmatrix}
+\begin{pmatrix}
+v_1
+\end{pmatrix}
+=
+\begin{pmatrix}
+I_1+I_2+V_{12}(y_{12}+y_{22})
+\end{pmatrix}
+$$
+
+As shown above, with a bit of extra computation, the 3x3 matrix was reduced to a 1x1 matrix. For every voltage source, the matrix size can be reduced by two. For large circuits with many voltage sources, this can significantly reduce the size of the matrix, and reduce computation necessary to solve it.
+
+An LU decomposition algorithm described in Numerical Recipes [5] has an efficiency of approximately $$O(N^3)$$, where N is the size of the matrix. An example circuit with a 15x15 matrix and two voltage sources could be reduced to an 11x11 matrix. Using the approximation above, this 11x11 matrix could be solved in approximately 40% of the time of the 15x15 matrix plus the additional time taken in conditioning the matrix and subsequent solution of the eliminated variables.
+
+It should also be noted that most matrices for reasonable large circuits are sparse, meaning that there is a high number of zeros in the matrix. This can be taken advantage of using special methods. Use of these methods can increase the efficiency of solution for typical circuits from O(N3) to about O(N1.5) [3], a significant improvement. These methods have not been used in this project, so have not been considered in detail, but are worth keeping in mind for further work.
+
+There are other techniques for building up a set of matrix equations for a circuit. Graph/tableau techniques are discussed in “Computer Methods for Circuit Analysis and Design” [4], but it mentions that MNA is usually preferred over this technique as it produces more compact, less sparse matrices that are easier to work with. A method called ‘two-graph MNA’ exists that performs even better, but this is not considered here as it would require too much modification of the existing code for too little benefit. Also, its main advantage is in switched networks, which are not a high priority.
+
 
