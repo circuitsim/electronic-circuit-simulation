@@ -50,6 +50,42 @@ $$
 
 ## Voltage Source
 
+For an $$n$$-node circuit with an arbitrary number of voltage sources, we number the voltages sources from $$0 - s$$. Voltage source $$s$$ from node $$i$$ to node $$j$$ stamps into the equation:
+
+$$
+\begin{align*}
+
+&
+\begin{bmatrix}
+ &  & 1 \\
+ &  & -1 \\
+1\quad & -1\quad & 0
+\end{bmatrix}
+\begin{bmatrix}
+ \\
+ \\
+i_{12}
+\end{bmatrix}
+=
+\begin{bmatrix}
+ \\
+ \\
+V_{12}
+\end{bmatrix}
+\begin{matrix}
+row\ i\\
+row\ j\\
+row\ n\!+\!s
+\end{matrix}
+\\
+&
+\begin{matrix}
+col\ i & col\ j & col\ n\!+\!s
+\end{matrix}
+
+\end{align*}
+$$
+
 ## Controlled Sources
 
 ### CCCS
