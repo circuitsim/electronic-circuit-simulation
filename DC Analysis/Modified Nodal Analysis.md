@@ -83,7 +83,7 @@ It is possible to swap rows to move the zeros away from the diagonal, but a bett
 
 For larger matrices, this is likely to have significant benefits.
 
-*It would be interesting to show an example of how much more efficient this is to solve. E.g. Assume 10x10 matrix, one voltage source, turns to 8x8 matrix with two eliminated variables. O(n^3) to solve equation, O(1) to solve for eliminated variables. 10^3 = 1000, 8^3 = 512. Could be significantly faster?*
+*It would be interesting to show an example of how much more efficient this is to solve. E.g. Assume 10x10 matrix, one voltage source, turns to 8x8 matrix with two eliminated variables. O(n^3) to solve equation, O(1) to solve for eliminated variables. 10^3 = 1000, 8^3 = 512. Could be significantly faster? But how efficient is it to condition the matrix properly?*
 
 ### Example
 
@@ -145,4 +145,27 @@ v_1 - v_2 &= V_{12}
 \end{align*}
 $$
 
+Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too.
 
+$
+\begin{pmatrix}
+y_{11}+y_{21} & y_{12}+y_{22} \\
+1 &-1
+\end{pmatrix}
+\begin{pmatrix}
+v_{1} \\
+v_{2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+I_{1}+I_{2} \\
+V_{12}
+\end{pmatrix}
+$$
+
+$$
+\begin{align*}
+(y_{11}+y_{21})v_1 + (y_{12}+y_{22})v_2 &= I_1+I_2 \\
+-(v_2 - v_1) &= V_{12}
+\end{align*}
+$$
