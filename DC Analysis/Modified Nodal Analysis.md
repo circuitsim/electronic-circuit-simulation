@@ -145,9 +145,18 @@ v_1 - v_2 &= V_{12}
 \end{align*}
 $$
 
-Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too. Start by adding row 2 to row 1:
+Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too. Start by adding column 2 to column 1:
 
 $$
+\begin{pmatrix}
+y_{11}+y_{21}+y_{12}+y_{22} & y_{12}+y_{22} \\
+0 &-1
+\end{pmatrix}
+\begin{pmatrix}
+v_1 \\
+v_2-v_1
+\end{pmatrix}
+=
 \begin{pmatrix}
 I_1+I_2 \\
 V_{12}
