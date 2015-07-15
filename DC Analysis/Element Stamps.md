@@ -1,12 +1,13 @@
 # Element Stamps
 
+For the equation:
 $$
 Yv=J
 $$
 
 ## Resistor
 
-Into the $$Y$$ matrix:
+A resistor from node $$i$$ to node $$j$$ stamps into the $$Y$$ matrix:
 
 $$
 \begin{align*}
