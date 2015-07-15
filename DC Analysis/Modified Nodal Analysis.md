@@ -120,7 +120,7 @@ v_1 - v_2 &= V_{12}
 \end{align}
 $$
 
-Add row 2 to row 1 to eliminate $$i_{12}$$. $$i_{12}$$ can be calculated later by substituting $$v_1$$ and $$v_2$$ into equation 1 or 2 above.
+Add row 2 to row 1 to eliminate $$i_{12}$$. $$i_{12}$$ can be calculated later by substituting $$v_1$$ and $$v_2$$ into one of the equations above.
 
 $$
 \begin{pmatrix}
@@ -147,7 +147,7 @@ $$
 
 Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variable too.
 
-$
+$$
 \begin{pmatrix}
 y_{11}+y_{21} & y_{12}+y_{22} \\
 1 &-1
