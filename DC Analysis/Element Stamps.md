@@ -50,7 +50,7 @@ $$
 
 ## Voltage Source
 
-For an $$n$$-node circuit with an arbitrary number of voltage sources, we number the voltages sources from $$0 - s$$. Voltage source $$s$$ from node $$i$$ to node $$j$$ stamps into the equation:
+For an $$n$$-node circuit with $$x$$ voltage sources, we number the voltages sources from $$0$$-$$x\!-\!1$$. Voltage source $$k$$ from node $$i$$ to node $$j$$ stamps into the equation:
 
 $$
 \begin{align*}
@@ -75,12 +75,12 @@ V_{12}
 \begin{matrix}
 row\ i\\
 row\ j\\
-row\ n\!+\!s
+row\ n\!+\!k
 \end{matrix}
 \\
 &
 \begin{matrix}
-col\ i & col\ j & col\ n\!+\!s
+col\ i & col\ j & col\ n\!+\!k
 \end{matrix}
 
 \end{align*}
