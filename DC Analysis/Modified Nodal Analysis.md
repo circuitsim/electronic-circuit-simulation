@@ -35,7 +35,7 @@ $$
 
 ## Voltage Source Stamp
 
-The *stamp* for a voltage source between nodes $$i$$ and $$j$$ for an $$n$$ node circuit is:
+The *stamp* for a voltage source between nodes $$i$$ and $$j$$ for an $$n$$ node circuit (assuming it's the only voltage source) is:
 
 $$
 \begin{align*}
