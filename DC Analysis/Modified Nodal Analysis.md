@@ -27,8 +27,8 @@ i_{12}
 \end{bmatrix}
 =
 \begin{bmatrix}
-I_{1}=0\\
-I_{2}=0\\
+0\\
+0\\
 V_{12}
 \end{bmatrix}
 $$
