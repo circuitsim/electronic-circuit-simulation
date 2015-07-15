@@ -35,7 +35,7 @@ $$
 
 ## Voltage Source Stamp
 
-The *stamp* for a voltage source between nodes $$i$$ and $$j$$ for an $$n\!+\!1$$ node circuit is:
+The *stamp* for a voltage source between nodes $$i$$ and $$j$$ for an $$n$$ node circuit is:
 
 $$
 \begin{align*}
@@ -60,12 +60,12 @@ V_{12}
 \begin{matrix}
 row\ i\\
 row\ j\\
-row\ n\!+\!1
+row\ n
 \end{matrix}
 \\
 &
 \begin{matrix}
-col\ i & col\ j & col\ n\!+\!1
+col\ i & col\ j & col\ n
 \end{matrix}
 
 \end{align*}
