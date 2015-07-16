@@ -50,7 +50,7 @@ $$
 
 ## Voltage Source
 
-For an $$n$$-node circuit with $$x$$ voltage sources, we number the voltages sources from $$0$$-$$x\!-\!1$$. Voltage source $$k$$ from node $$i$$ to node $$j$$ stamps into the equation:
+For an $$n$$-node circuit with $$x$$ voltage sources, we number the voltages sources from $$1$$-$$x$$. Voltage source $$k$$ from node $$i$$ to node $$j$$ stamps into the equation:
 
 $$
 \begin{align*}
