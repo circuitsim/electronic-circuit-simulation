@@ -31,7 +31,7 @@ This requires MNA, because of the voltage source. A Norton equivalent can be use
 From this, it can be seen that the general steps for linear transient analysis are:
 
 1. Start with known initial conditions
-2. Increment time by Δt and use the appropriate companion models with calculated values
+2. Increment time by $$\Delta t$$ and use the appropriate companion models with calculated values
 3. Perform a DC analysis
 4. Back to step 1 with results
 
