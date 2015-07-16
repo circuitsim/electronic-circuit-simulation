@@ -12,7 +12,7 @@ $$
 G_L=\frac{1}{j\omega L} 
 $$
 
-As $$\omega \rightarrow 0$$, it is possible that numerical problems could arise as the admittance approaches infinity [3]. To solve this, inductors are modelled as impedances. The inductor current $$I_L$$ is added as a new variable and an auxiliary equation is added, much the same as the technique used for voltage sources in MNA. For an inductor from node a to node b, the auxiliary equation is:
+As $$\omega \rightarrow 0$$, it is possible that numerical problems could arise as the admittance approaches infinity. To solve this, inductors are modelled as impedances. The inductor current $$I_L$$ is added as a new variable and an auxiliary equation is added, much the same as the technique used for voltage sources in MNA. For an inductor from node $$a$$ to node $$b$$, the auxiliary equation is:
 
 Equation 
 
