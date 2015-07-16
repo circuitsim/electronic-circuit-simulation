@@ -83,8 +83,6 @@ It is possible to swap rows to move the zeros away from the diagonal, but a bett
 
 For larger matrices, this is likely to have significant benefits.
 
-*It would be interesting to show an example of how much more efficient this is to solve. E.g. Assume 10x10 matrix, one voltage source, turns to 8x8 matrix with two eliminated variables. O(n^3) to solve equation, O(1) to solve for eliminated variables. 10^3 = 1000, 8^3 = 512. Could be significantly faster? But how efficient is it to condition the matrix properly?*
-
 ### Example
 
 A simple example of this procedure is shown in the following equations for a generic three-node circuit, with a voltage source $$V_{12}$$ between nodes 1 and 2.
