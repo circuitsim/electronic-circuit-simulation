@@ -8,7 +8,7 @@ LTI RLC circuits give linear differential equations, with capacitors having the 
 
 Equation 
 
-Using this capacitor as an example, Equation  can be integrated to give the voltage at time t+Δt, where Δt is the time step:
+Using this capacitor as an example, Equation  can be integrated to give the voltage at time $$t+\Delta t$$, where $$\Delta t$$ is the time step:
 
 Equation 
 
@@ -20,7 +20,7 @@ However, this problem can be overcome by replacing the capacitor with a ‘compa
 
 Figure 3.2: Thévenin companion model for a capacitor
 
-This requires MNA, because of the voltage source. A Norton equivalent can be used, but the 2C/ Δt term may become excessively large for small time steps Δt→0, due to the limited range and precision of floating-point numbers in a computer. Equally, the Thévenin circuit has similar problems for DC analysis, Δt→∞.  Which model is used should depend on the situation.
+This requires MNA, because of the voltage source. A Norton equivalent can be used, but the $$\frac{2C}{\Delta t}$$ term may become excessively large for small time steps $$\Delta t\rightarrow 0$$, due to the limited range and precision of floating-point numbers in a computer. Equally, the Thévenin circuit has similar problems for DC analysis, $$\Delta t\rightarrow \infty$$.  Which model is used should depend on the situation.
 From this, it can be seen that the general steps for linear transient analysis are:
 
 1. Start with known initial conditions
