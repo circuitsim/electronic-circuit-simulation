@@ -7,6 +7,11 @@ As a first pass I'll be copying the chapter more or less as-is into markdown for
 
 Knowledge of basic circuit theory, e.g. [Kirchhoff's](https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws) [laws](http://www.electronics-tutorials.ws/dccircuits/dcp_4.html), is assumed. For an introduction to circuit theory, consider Khan Academy's [video tutorials](https://www.khanacademy.org/science/physics/circuits-topic).
 
+Further Reading
+===============
+
+If you want to learn more about circuit simulation, I highly recommend [Electronic Circuit & System Simulation Methods](http://www.amazon.co.uk/Electronic-Circuit-System-Simulation-Methods/dp/0071347704). At the time of writing, new paperbacks and ebooks are prohibitively expensive. Luckily there are some reasonably priced used copies available.
+
 License
 =======
 
