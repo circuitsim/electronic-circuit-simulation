@@ -129,24 +129,71 @@ row\ i\\
 row\ j\\
 row\ l\\
 row\ m\\
-row\ n\!+\!k
+row\ n\!+\!v
 \end{matrix}
 \\
 &
 \begin{matrix}
-col\ i & col\ j & col\ n\!+\!k
+col\ i & col\ j & col\ n\!+\!v
 \end{matrix}
 
 \end{align*}
 $$
 
-### CCVS
+### Current-Controlled Voltage Source
+
+\begin{align*}
+
+&
+\left[
+\begin{array}{cccc|cc}
+ & & & & 1 & 0 \\
+ & & & & -1 & 0 \\
+ & & & & 0 & 1 \\
+ & & & & 0 & -1 \\
+\hline
+1\quad & -1 & 0\quad & 0\quad & 0 & 0 \\
+0\quad & 0 & 1\quad & -1\quad & \alpha & 0
+\end{array}
+\right]
+\begin{bmatrix}
+ \\
+ \\
+ \\
+ \\
+i_{ij}\\
+i_{lm}
+\end{bmatrix}
+=
+\begin{bmatrix}
+ \\
+ \\
+ \\
+ \\
+0\\
+0
+\end{bmatrix}
+\begin{matrix}
+row\ i\\
+row\ j\\
+row\ l\\
+row\ m\\
+row\ n\!+\!v_1 \\
+row\ n\!+\!v_2
+\end{matrix}
+\\
+&
+\begin{matrix}
+\ col\ i & col\ j & col\ l & col\ m
+\end{matrix}
+
+\end{align*}
+
+### Voltage-Controlled Current Source
 
 
 
-### VCCS
-
-### VCVS
+### Voltage-Controlled Voltage Source
 
 $$
 \begin{align*}
@@ -174,12 +221,12 @@ i_{lm}
 \begin{matrix}
 row\ l\\
 row\ m\\
-row\ n\!+\!k
+row\ n\!+\!v
 \end{matrix}
 \\
 &
 \begin{matrix}
-\ col\ i & col\ j & col\ l & col\ m & col\ n\!+\!k
+\ col\ i & col\ j & col\ l & col\ m & col\ n\!+\!v
 \end{matrix}
 
 \end{align*}
