@@ -6,11 +6,15 @@ Transient analysis is used to show the state of a circuit as it varies with time
 
 LTI RLC circuits give linear differential equations, with capacitors having the form:
 
-Equation 
+$$
+i(t)=C\frac{\partial v(t)}{\partial t}
+$$ 
 
 Using this capacitor as an example, Equation  can be integrated to give the voltage at time $$t+\Delta t$$, where $$\Delta t$$ is the time step:
 
-Equation 
+$$
+v(t+\Delta t)=v(t)+\frac{1}{C}\int_{t}^{\Delta t}i(\tau )d\tau
+$$
 
 A number of integration schemes can be used, including Forward/Backward Euler, and Trapezoidal. Using the Trapezoidal scheme results in an implicit formula, containing both voltage and current at the next time step:
 
