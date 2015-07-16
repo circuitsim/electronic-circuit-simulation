@@ -26,6 +26,6 @@ For nonlinear circuits, the procedure is more complicated.  Nonlinear DC analysi
 
 ## Alternative Methods
 
-An alternative, useful, method of finding the frequency response of a circuit is pole/zero analysis. This is only an optional objective so has not been considered in detail, but again this is not very efficient. A more efficient method does exist, and this approximates the frequency response using dominant pole analysis, based upon a method called ‘moment-matching’. It is also noteworthy that pole/zero analysis can cause problems when circuits contain more than about 20 charge storage elements [1].
+An alternative, useful, method of finding the frequency response of a circuit is pole/zero analysis. This is only an optional objective so has not been considered in detail, but again this is not very efficient. A more efficient method does exist, and this approximates the frequency response using dominant pole analysis, based upon a method called ‘moment-matching’. It is also noteworthy that pole/zero analysis can cause problems when circuits contain more than about 20 charge storage elements, as noted in [The SPICE Book](http://www.amazon.co.uk/The-Spice-Book-Andre-Vladimirescu/dp/0471609269).
 
 Another technique can be used, using a simple FFT of the output signal when a broadband signal is input to a circuit. This, of course, relies on the time domain simulation being linear and accurate, which may not be the case.
