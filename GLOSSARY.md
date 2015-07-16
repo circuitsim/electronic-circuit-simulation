@@ -11,3 +11,7 @@ Linear, Time-Invariant. See: [LTI System Theory](wikipedia.org/wiki/LTI_system_t
 ## MNA
 
 Modified Nodal Analysis
+
+## Newton-Raphson
+
+A numerical method for recursively approximating the roots of a function. See: [Newton's method](wikipedia.org/wiki/Newton%27s_method)
