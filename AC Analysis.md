@@ -9,7 +9,7 @@ For LTI circuits, AC analysis is relatively simple. Frequency domain equations a
 Most circuit elements are modelled as complex admittances for AC analysis. For example, a capacitor’s admittance is $$j\omega C$$. However, the admittance for an inductor is:
 
 $$
-G_L=\frac{1}{j\omega L} 
+G_L=\frac{1}{j\omega L}
 $$
 
 As $$\omega \rightarrow 0$$, it is possible that numerical problems could arise as the admittance approaches infinity. To solve this, inductors are modelled as impedances. The inductor current $$I_L$$ is added as a new variable and an auxiliary equation is added, much the same as the technique used for voltage sources in MNA. For an inductor from node $$a$$ to node $$b$$, the auxiliary equation is:
