@@ -50,7 +50,7 @@ $$
 
 ## Voltage Source
 
-For an $$n$$-node circuit with $$x$$ voltage sources, we number the voltages sources from $$1$$-$$x$$. Voltage source $$k$$ from node $$i$$ to node $$j$$ stamps into the equation:
+For an $$n$$-node circuit with $$x$$ voltage sources, we number the voltages sources from $$1$$-$$x$$. Voltage source $$v$$ from node $$i$$ to node $$j$$ stamps into the equation:
 
 $$
 \begin{align*}
@@ -78,12 +78,12 @@ V_{ij}
 \begin{matrix}
 row\ i\\
 row\ j\\
-row\ n\!+\!k
+row\ n\!+\!v
 \end{matrix}
 \\
 &
 \begin{matrix}
-col\ i & col\ j & col\ n\!+\!k
+col\ i & col\ j & col\ n\!+\!v
 \end{matrix}
 
 \end{align*}
@@ -91,9 +91,9 @@ $$
 
 ## Controlled Sources
 
-For controlled sources with a gain of $$\alpha$$.
+For controlled sources with a gain of $$\alpha$$. The source is from node $$l$$ to node $$m$$, controlled by the current/voltage from node $$i$$ to node $$j$$.
 
-### CCCS
+### Current-Controlled Current Source
 
 $$
 \begin{align*}
