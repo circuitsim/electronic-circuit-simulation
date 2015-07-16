@@ -20,8 +20,6 @@ A number of integration schemes can be used, including Forward/Backward Euler, a
 
 $$
 v(t+\Delta t)=\color{#15c}{v(t)+\frac{\Delta t}{2C}i(t)}+\color{#900}{\frac{\Delta t}{2C}}\color{7a5}{i(t+\Delta t)}
-\\
-v(t+\Delta t)=\color{#15c}{v(t)}+\frac{\Delta t}{2C}(i(t)+i(t+\Delta t))
 $$
 
 However, this problem can be overcome by replacing the capacitor with a *companion model*, as shown in below. The colouring is kept the same as the equation above, to show the connection between the two.
