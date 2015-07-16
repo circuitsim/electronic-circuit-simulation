@@ -27,6 +27,7 @@ However, this problem can be overcome by replacing the capacitor with a ‘compa
 Figure 3.2: Thévenin companion model for a capacitor
 
 This requires MNA, because of the voltage source. A Norton equivalent can be used, but the $$\frac{2C}{\Delta t}$$ term may become excessively large for small time steps $$\Delta t\rightarrow 0$$, due to the limited range and precision of floating-point numbers in a computer. Equally, the Thévenin circuit has similar problems for DC analysis, $$\Delta t\rightarrow \infty$$.  Which model is used should depend on the situation.
+
 From this, it can be seen that the general steps for linear transient analysis are:
 
 1. Start with known initial conditions
@@ -37,9 +38,10 @@ From this, it can be seen that the general steps for linear transient analysis a
 Due to the Newton-Raphson approximation at each stage of transient analysis, there is always going to be some error. Local error is the error in a single iteration, and cumulative error is the error that accumulates as a result of many iterations. With any luck, the local errors will be small and random, with equal values of positive and negative error, so will cancel out on average over many iterations. This may not always be the case though, and it is possible for the analysis to become unstable, with the cumulative error increasing in every iteration.
 
 For transient analysis, it is important to know that the speed of convergence of each iteration relies on a good choice of $$\Delta t$$. This time step can also be fixed or dynamic, with a dynamic time step being more difficult to implement well, but can mean greater speed of convergence in many situations. Currently, the simulator uses a fixed, but adjustable, time step, which defaults to $$5\mu s$$.
-Nonlinear Transient Analysis
 
-Only a brief introduction to nonlinear transient analysis has been researched, as it is not essential to this project, so a very basic overview is given here. Essentially, it is very similar to the linear version, but with additional nonlinear DC analysis stages. The process given in [3] is:
+## Nonlinear Transient Analysis
+
+Nonlinear transient analysis is very similar to the linear version, but with additional nonlinear DC analysis stages. The general process is:
 
 1. Nonlinear DC biasing
 2. Initial conditions
