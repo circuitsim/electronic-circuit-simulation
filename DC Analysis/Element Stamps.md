@@ -191,7 +191,21 @@ row\ n\!+\!v_2
 
 ### Voltage-Controlled Current Source
 
-
+$$
+\begin{array}{cl}
+\begin{bmatrix}
+\alpha & -\alpha \\
+-\alpha & \alpha
+\end{bmatrix}
+&
+\begin{array}{l}
+row\ l\\
+row\ m
+\end{array}
+\\
+col\ i \quad col\ j
+\end{array}
+$$
 
 ### Voltage-Controlled Voltage Source
 
