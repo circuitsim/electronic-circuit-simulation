@@ -19,7 +19,7 @@ $$
 A number of integration schemes can be used, including Forward/Backward Euler, and Trapezoidal. Using the Trapezoidal scheme results in an implicit formula, containing both voltage and current at the next time step:
 
 $$
-v(t+\Delta t)=v(t)+\frac{\Delta t}{2C}(i(t)+i(t+\Delta t))
+v(t+\Delta t)=\color{#15c}{v(t)+\frac{\Delta t}{2C}i(t)}+\color{#900}{\frac{\Delta t}{2C}}\color{7a5}{i(t+\Delta t)}
 \\
 v(t+\Delta t)=\color{#15c}{v(t)}+\frac{\Delta t}{2C}(i(t)+i(t+\Delta t))
 $$
