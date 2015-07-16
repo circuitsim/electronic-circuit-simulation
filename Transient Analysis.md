@@ -22,7 +22,7 @@ $$
 v(t+\Delta t)=v(t)+\frac{\Delta t}{2C}(i(t)+i(t+\Delta t))
 $$
 
-However, this problem can be overcome by replacing the capacitor with a ‘companion model’, as shown in Figure 3.2 . The colouring is kept the same as the equation above, to show the connection between the two.
+However, this problem can be overcome by replacing the capacitor with a *companion model*, as shown in below. The colouring is kept the same as the equation above, to show the connection between the two.
 
 ![Capacitor - Thevenin Model](./imgs/Capacitor - Thevenin companion model.png)
 
