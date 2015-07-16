@@ -37,7 +37,9 @@ From this, it can be seen that the general steps for linear transient analysis a
 
 Due to the Newton-Raphson approximation at each stage of transient analysis, there is always going to be some error. Local error is the error in a single iteration, and cumulative error is the error that accumulates as a result of many iterations. With any luck, the local errors will be small and random, with equal values of positive and negative error, so will cancel out on average over many iterations. This may not always be the case though, and it is possible for the analysis to become unstable, with the cumulative error increasing in every iteration.
 
-For transient analysis, it is important to know that the speed of convergence of each iteration relies on a good choice of $$\Delta t$$. This time step can also be fixed or dynamic, with a dynamic time step being more difficult to implement well, but can mean greater speed of convergence in many situations. Currently, the simulator uses a fixed, but adjustable, time step, which defaults to $$5\mu s$$.
+For transient analysis, it is important to know that the speed of convergence of each iteration relies on a good choice of $$\Delta t$$. This time step can also be fixed or dynamic, with a dynamic time step being more difficult to implement well, but can mean greater speed of convergence in many situations.
+
+The [simulator created by Paul Falstad](http://www.falstad.com/circuit/) uses a fixed, but adjustable, time step, which defaults to $$5\mu s$$.
 
 ## Nonlinear Transient Analysis
 
