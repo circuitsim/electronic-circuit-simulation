@@ -142,6 +142,7 @@ $$
 
 ### Current-Controlled Voltage Source
 
+$$
 \begin{align*}
 
 &
@@ -188,6 +189,7 @@ row\ n\!+\!v_2
 \end{matrix}
 
 \end{align*}
+$$
 
 ### Voltage-Controlled Current Source
 
