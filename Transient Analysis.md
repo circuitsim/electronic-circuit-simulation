@@ -18,7 +18,9 @@ $$
 
 A number of integration schemes can be used, including Forward/Backward Euler, and Trapezoidal. Using the Trapezoidal scheme results in an implicit formula, containing both voltage and current at the next time step:
 
-Equation 
+$$
+v(t+\Delta t)=v(t)+\frac{\Delta t}{2C}(i(t)+i(t+\Delta t))
+$$
 
 However, this problem can be overcome by replacing the capacitor with a ‘companion model’, as shown in Figure 3.2 . The colouring is kept the same as the equation above, to show the connection between the two.
 
