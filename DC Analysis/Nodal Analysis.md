@@ -34,7 +34,7 @@ row\ i\\
 row\ j
 \end{matrix}
 \\
-col\ i \quad col j
+col\ i \quad col\ j
 \end{array}
 $$
 
