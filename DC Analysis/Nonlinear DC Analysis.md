@@ -28,7 +28,7 @@ $$
 
 This nonlinear equation needs to be solved iteratively using Newton-Raphson. A simple linear representation of a diode is shown below. This substitution is performed in the linearisation step.
 
-**TODO diagram**
+![Diode linearisation](../imgs/Diode linearisation.jpg)
 
 There are two interlinking problems with Newton-Raphson (or any similar technique): efficiency and convergence. A poor initial guess can cause very slow convergence, or for some circuits it may never converge at all. A good initial guess is therefore necessary for efficiency.
 
