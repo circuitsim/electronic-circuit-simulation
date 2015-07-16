@@ -9,16 +9,24 @@ Circuits with nonlinear components pose a more difficult problem than LTI circui
   1. Linear DC analysis
   1. If converged, solution (bias point) found. Else, back to 2.1 with improved guess.
 
-A simple example with a diode is considered below. The Thévenin and Norton equivalents for a simple diode circuit are shown in 3. From this, the nodal equation in 15 is derived.
+A simple example with a diode is considered below. The Thévenin and Norton equivalents (respectively) for a simple diode circuit are shown below.
 
-**TODO diagrams**
-**TODO equation**
+![Thévenin diode circuit](../imgs/Diode Circuit.jpg)![Norton diode circuit](../imgs/Norton Diode Circuit.jpg)
 
-Replacing id with the diode equation [3] gives:
+From this we can derive the equation:
 
-**TODO equation**
+$$
+\frac{v_d}{R}+i_d=\frac{V_s}{R}
+$$
 
-The nonlinear equation in Equation  needs to be solved iteratively using Newton-Raphson. A simple linear representation of a diode is shown in Figure 3.1 . This substitution is performed in the linearisation step.
+
+Replacing $$i_d$$ with the diode equation gives:
+
+$$
+\frac{v_d}{R}+ I_{SAT}\left [ exp\left ( \frac{qV_d}{\eta kT} \right )-1 \right ] =\frac{V_s}{R}
+$$
+
+This nonlinear equation needs to be solved iteratively using Newton-Raphson. A simple linear representation of a diode is shown below. This substitution is performed in the linearisation step.
 
 **TODO diagram**
 
