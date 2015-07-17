@@ -18,7 +18,7 @@ $$
 v_a-v_b-j\omega LI_L=0
 $$
 
-To complete the primary objective, this implementation is all that is needed, along with Bode Plots of the results. It is interesting to note that that is not a particularly efficient method. For 100 frequency points, it is necessary to solve for 100 complex-valued circuits, which for large circuits can be a lengthy task. However, since this simulator usually deals with relatively small circuits, with a probable maximum of only a few dozen circuit elements, it it was considered unlikely that this would become a problem.
+It is interesting to note that that is not a particularly efficient method. For 100 frequency points, it is necessary to solve for 100 complex-valued circuits, which for large circuits can be a lengthy task.
 
 ## Nonlinear AC Analysis
 
