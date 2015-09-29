@@ -89,7 +89,6 @@ col\ i & col\ j & col\ n\!+\!v
 \end{align*}
 $$
 
-# FIXME - All Controlled Source stamps
 ## Controlled Sources
 
 For controlled sources with a gain of $$\alpha$$. The source is from node $$l$$ to node $$m$$, controlled by the current/voltage from node $$i$$ to node $$j$$.
@@ -107,7 +106,7 @@ $$
  &  & \alpha \\
  &  & -\alpha \\
 \hline
-1\quad & -1\quad & 0
+-1\quad & 1\quad & 0
 \end{array}
 \right]
 \begin{bmatrix}
@@ -154,8 +153,8 @@ $$
  & & & & 0 & 1 \\
  & & & & 0 & -1 \\
 \hline
-1\quad & -1 & 0\quad & 0\quad & 0 & 0 \\
-0\quad & 0 & 1\quad & -1\quad & \alpha & 0
+-1\quad & 1 & 0\quad & 0\quad & 0 & -\alpha \\
+0\quad & 0 & -1\quad & 1\quad & 0 & 0
 \end{array}
 \right]
 \begin{bmatrix}
@@ -221,7 +220,7 @@ $$
  & & & & 1 \\
  & & & & -1 \\
 \hline
--\alpha\quad & \alpha\quad & 1\quad & -1\quad & 0
+\alpha\quad & -\alpha\quad & -1\quad & 1\quad & 0
 \end{array}
 \right]
 \begin{bmatrix}
