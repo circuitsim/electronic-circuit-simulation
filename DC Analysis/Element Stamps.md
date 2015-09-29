@@ -61,7 +61,7 @@ $$
  &  & 1 \\
  &  & -1 \\
 \hline
-1\quad & -1\quad & 0
+-1\quad & 1\quad & 0
 \end{array}
 \right]
 \begin{bmatrix}
