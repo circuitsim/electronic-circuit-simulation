@@ -18,7 +18,7 @@ $$
 \begin{bmatrix}
 \frac{1}{R_1} + \tfrac{1}{R_2} & \tfrac{-1}{R_2} & 1 \\
 \tfrac{-1}{R_2} & \tfrac{1}{R_2} & -1\\
-1 & -1 & 0
+-1 & 1 & 0
 \end{bmatrix}
 \begin{bmatrix}
 v_{1}\\
@@ -44,7 +44,7 @@ $$
 \begin{bmatrix}
  &  & 1 \\
  &  & -1 \\
-1\quad & -1\quad & 0
+-1\quad & 1\quad & 0
 \end{bmatrix}
 \begin{bmatrix}
  \\
@@ -93,7 +93,7 @@ $$
 \begin{bmatrix}
 y_{11} & y_{12} & 1 \\
 y_{21} & y_{22} & -1 \\
-1 &-1 & 0
+-1 & 1 & 0
 \end{bmatrix}
 \begin{bmatrix}
 v_{1} \\
@@ -114,7 +114,7 @@ $$
 \begin{align}
 y_{11}v_1 + y_{12}v_2 + i_{12} &= I_1 \\ 
 y_{21}v_1 + y_{22}v_2 - i_{12} &= I_2 \\ 
-v_1 - v_2 &= V_{12}
+v_2 - v_1 &= V_{12}
 \end{align}
 $$
 
@@ -123,7 +123,7 @@ Add row 2 to row 1 to eliminate $$i_{12}$$. $$i_{12}$$ can be calculated later b
 $$
 \begin{pmatrix}
 y_{11}+y_{21} & y_{12}+y_{22} \\
-1 &-1
+-1 & 1
 \end{pmatrix}
 \begin{pmatrix}
 v_{1} \\
@@ -139,7 +139,7 @@ $$
 $$
 \begin{align*}
 (y_{11}+y_{21})v_1 + (y_{12}+y_{22})v_2 &= I_1+I_2 \\
-v_1 - v_2 &= V_{12}
+v_2 - v_1 &= V_{12}
 \end{align*}
 $$
 
@@ -148,7 +148,7 @@ Since we know that $$v_2$$ is dependent on $$v_1$$, we can eliminate this variab
 $$
 \begin{pmatrix}
 y_{11}+y_{21}+y_{12}+y_{22} & y_{12}+y_{22} \\
-0 &-1
+0 & 1
 \end{pmatrix}
 \begin{pmatrix}
 v_1 \\
@@ -164,7 +164,7 @@ $$
 $$
 \begin{align*}
 (y_{11}+y_{21}+y_{12}+y_{22})v_1 + (y_{12}+y_{22})(v_2-v_1) &= I_1+I_2 \\
--(v_2 - v_1) &= V_{12}
+v_2 - v_1 &= V_{12}
 \end{align*}
 $$
 
@@ -172,7 +172,7 @@ We then substitute $$V_{12}$$ into the first equation to get:
 
 $$
 \begin{align*}
-(y_{11}+y_{21}+y_{12}+y_{22})v_1 + (y_{12}+y_{22})(-V_{12}) &= I_1+I_2
+(y_{11}+y_{21}+y_{12}+y_{22})v_1 + (y_{12}+y_{22})(V_{12}) &= I_1+I_2
 \end{align*}
 $$
 
