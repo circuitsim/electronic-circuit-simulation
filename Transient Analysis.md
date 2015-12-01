@@ -2,6 +2,8 @@
 
 Transient analysis is used to show the state of a circuit as it varies with time, rather than just the steady state solution, as in DC analysis.
 
+TODO discuss pros/cons of Norton vs Thevenin, FE vs BE vs Trap.
+
 ## Linear Transient Analysis
 
 LTI RLC circuits give linear differential equations, with capacitors having the form:
